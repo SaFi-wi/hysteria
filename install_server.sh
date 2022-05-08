@@ -100,6 +100,9 @@ identify_the_operating_system_and_architecture() {
       'mips' | 'mipsle' | 'mips64' | 'mips64le')
         MACHINE='mipsle'
         ;;
+      's390x' )
+        MACHINE='s390x'
+        ;;
       *)
         echo "error: The architecture is not supported."
         exit 1
